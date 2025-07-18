@@ -1,0 +1,93 @@
+@import url('//fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #051105;
+    --header: #102010;
+    --headerhighlight: #206f40;
+    --h1: #173;
+    --h2: #174;
+    --text: hsl(0, 0%, 95%);
+    --text-muted: hsl(0, 0%, 90%);
+
+}
+
+* {
+    font-family: Inter;
+    color: var(--text);
+    margin: 0;
+}
+
+h1 {
+    font-family: Poppins;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    height: 3rem;
+}
+
+header div.header {
+    background-color: var(--header);
+    margin: 0;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--headerhighlight) solid 0.1rem;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    padding: auto 0;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    margin: auto;
+    left: 0;
+}
+
+.header p {
+    text-align: center;
+}
+
+.swap {
+    display: inline-block;
+    padding: 0.5rem;
+    position: absolute;
+
+    a {
+        text-decoration: none;
+        background-color: var(--h1);
+        display: block;
+
+        h2 {
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+main {
+    max-width: 100ch;
+    display: block;
+    margin: auto;
+}
+
+.paragraph {
+    display: block;
+    text-align: justify;
+}
+
+header div {
+    margin: 0;
+}
+
+header div h2 {
+    padding: 0.5rem;
+}
