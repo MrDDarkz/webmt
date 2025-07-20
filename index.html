@@ -1,128 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Midterm Project</title>
+    <title>Grade 10</title>
     <style>
-        .elements * {
-            margin: 1rem;
-            padding: 0 1rem;
-        }
-
-        .elements h1 {
-            background-color: #173;
-            padding: 0 1rem;
-        }
-
-        .elements h2 {
-            color: #174
-        }
-
-        .elements p {
-            margin: 0 2rem;
-            margin-bottom: 3rem;
-        }
-
-        table {
-            display: block;
-            margin: auto;
-        }
-
-        .tile {
-            max-width: 10rem;
-            width: 10rem;
-        }
-
-        .elements li {
-            list-style: none;
-        }
-        .tile {
-            background-color: #142;
-            padding: 1rem;
-            border-radius: 1.333rem;
-            text-align: center;
-        }
-        .tile h3 {
-            margin: 0;
-            padding: 0;
-        }
-        tbody {
-            display: block;
-        }
+* {
+  color: hsl(0, 0%, 95%);
+}
+body {
+  background-image: url("/gradient.svg");
+}
+.header, aside {
+  border: var(--headerhighlight) solid 0.1rem;
+  border-radius:1rem;
+  overflow: hidden;
+}
+aside {
+  left: 0;
+  margin: 0;
+  width: 10rem;
+  display:block;
+  float: left;
+  background-color: var(--header);
+  overflow: hidden;
+}
+.sidebar {
+  padding: 0.5rem;
+}
+.togglesb {
+  margin:auto 0 auto 0.5rem;
+  border: 0.2rem #0c543000 solid;
+  border-radius: 10rem;
+}
+.togglesb:hover {
+  border: 0.2rem #0c5430 solid;
+  border-radius: 10rem;
+}
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header">
-            <div class="swap">
-                <a href="https://www.ddarkz.xyz">
-                    <h2>DDarkz</h2>
-                </a>
-            </div>
-            <div class="title">
-                <p>Computer Class Repository</p>
-            </div>
-        </div>
+      <div class="header">
+	<img src="sidebar.svg" height="75%" class="togglesb">
+	<div class="swap">
+	  <a href="https://www.ddarkz.xyz">
+	    <h2>DDarkz</h2>
+	  </a>
+	</div>
+	<div class="title">
+	  <p>Computer Class Repository</p>
+	</div>
+	<img class="logo" src="https://bcc.ac.th/2019/img/logo/logo_bcc.png" width="100">
+      </div>
     </header>
+    <div class="nav" style="margin: 0.5rem 1rem">
+      <a href="page2.html" class="navprev">Grade 12</a>
+      <a href="page1.html" class="navnext">Grade 11</a>
+    </div>
+    <aside>
+      <div class="sidebar">
+	<h2> sidebar </h2>
+
+      </div>
+    </aside>
     <main>
-        <div class="elements">
-            <h1>Explorer</h1>
-            <li class="lessons">
-                <h2>Lessons</h2>
-                <table>
-                    <tr>
-                        <td>
-                            <a href="/1WajanaLesson 1/index.html">
-                                <div class="tile">
-                                    <h3>LessonI</h3>
-                                    <p>
+      <div class="elements">
+	<h1>Grade 10</h1>
+	<li class="lessons" style="padding-bottom:3rem">
+	  <h2>Lessons</h2>
+	  <table>
+	    <tr>
+	      <td>
+		<a href="/L1/">
+		  <div class="tile">
+		    <h3>LessonI</h3>
+		    <p>
 
-                                    </p>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="/1WajanaLesson 2/index.html">
-                                <div class="tile">
-                                    <h3>LessonII</h3>
-                                    <p>
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	      <td>
+		<a href="/L2/">
+		  <div class="tile">
+		    <h3>LessonII</h3>
+		    <p>
 
-                                    </p>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="/1WajanaLesson 3/index.html">
-                                <div class="tile">
-                                    <h3>LessonIII</h3>
-                                    <p>
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	      <td>
+		<a href="/L3/">
+		  <div class="tile">
+		    <h3>LessonIII</h3>
+		    <p>
 
-                                    </p>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="/1WajanaLesson 4/index.html">
-                                <div class="tile">
-                                    <h3>LessonIV</h3>
-                                    <p>
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	      <td>
+		<a href="/L4/">
+		  <div class="tile">
+		    <h3>LessonIV</h3>
+		    <p>
 
-                                    </p>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </li>
-            <li class="">
-                <h2>Something</h2>
-            </li>
-        </div>
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	    </tr>
+	  </table>
+	</li>
+	<li class="refmat">
+	  <h2>Reference Material</h2>
+	  <table>
+	    <tr>
+	      <td>
+		<a href="/1WajanaLesson 1/index.html">
+		  <div class="tile">
+		    <h3>LessonI</h3>
+		    <p>
+
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	      <td>
+		<a href="/1WajanaLesson 2/index.html">
+		  <div class="tile">
+		    <h3>LessonII</h3>
+		    <p>
+
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	      <td>
+		<a href="/1WajanaLesson 3/index.html">
+		  <div class="tile">
+		    <h3>LessonIII</h3>
+		    <p>
+
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	      <td>
+		<a href="/1WajanaLesson 4/index.html">
+		  <div class="tile">
+		    <h3>LessonIV</h3>
+		    <p>
+
+		    </p>
+		  </div>
+		</a>
+	      </td>
+	    </tr>
+	  </table>
+	</li>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>

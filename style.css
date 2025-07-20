@@ -2,92 +2,121 @@
 @import url('//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --background: #051105;
-    --header: #102010;
-    --headerhighlight: #206f40;
-    --h1: #173;
-    --h2: #174;
-    --text: hsl(0, 0%, 95%);
-    --text-muted: hsl(0, 0%, 90%);
+  --background: #010503;
+  --header: #020e08;
+  --headerhighlight: #083820;
+  --h1: #173;
+  --h2: #174;
+  --text: hsl(0, 0%, 95%);
+  --text-muted: hsl(0, 0%, 90%);
 
 }
 
 * {
-    font-family: Inter;
-    color: var(--text);
-    margin: 0;
+  font-family: Inter;
+  color: var(--text);
 }
 
 h1 {
-    font-family: Poppins;
+  font-family: Poppins;
 }
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 header {
-    height: 3rem;
-}
-
-header div.header {
-    background-color: var(--header);
-    margin: 0;
-    height: 3rem;
-    margin-bottom: 1rem;
-    border-bottom: var(--headerhighlight) solid 0.1rem;
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
+  height: 3rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
 }
 
 .header {
-    padding: auto 0;
+  background-color: var(--header);
+  width: 100%;
+  margin: 0;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border: var(--headerhighlight) solid 0.1rem;
+  border-radius: 1rem;
+  position: sticky;
+  display: flex;
+  padding: auto 0.5rem;
+  z-index: 100;
 }
 
-.title {
-    display: block;
-    text-align: center;
-    margin: auto;
-    left: 0;
+.elements h1 {
+  background-color: var(--h1);
+  padding: 0 1rem;
+  margin: 1rem;
 }
 
-.header p {
-    text-align: center;
+.elements h2 {
+  color: var(--h2);
+  margin:0;
+  padding: 0 1rem;
 }
 
-.swap {
-    display: inline-block;
-    padding: 0.5rem;
-    position: absolute;
-
-    a {
-        text-decoration: none;
-        background-color: var(--h1);
-        display: block;
-
-        h2 {
-            padding: 0 0.5rem;
-        }
+.elements p {
+  margin: 0 2rem;
+  margin-bottom: 3rem;
+}
+table {
+  margin-left:auto;
+  margin-right:auto;
+  td {
+    padding:0.5rem;
+    .tile {
+      width: 7.5rem
     }
+  }
 }
 
+.elements li {
+  list-style: none;
+}
+.tile {
+  background-color: #142;
+  padding: 1rem;
+  border-radius: 1.333rem;
+  text-align: center;
+}
+.tile h3 {
+  margin: 0;
+}
+.title {
+  margin: 0 auto;
+  left: 0%;
+  right: 0%;
+}
+.toggleside {
+  display: block
+}
+.swap {
+  display: block;
+  padding: 0.33rem;
+  margin: 0 0.5rem;
+  h2 {
+    margin:0.25rem 0.25rem;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: var(--h1);
+    display: block;
+
+    h2 {
+      padding: 0 0.5rem;
+    }
+  }
+}
+.logo {
+  margin: 0.5rem 1rem;
+  right: 0%;
+}
 main {
-    max-width: 100ch;
-    display: block;
-    margin: auto;
-}
-
-.paragraph {
-    display: block;
-    text-align: justify;
-}
-
-header div {
-    margin: 0;
-}
-
-header div h2 {
-    padding: 0.5rem;
+  max-width: 80ch;
+  margin: 0 auto;
 }

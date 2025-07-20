@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+
+  <circle cx="100" cy="100" r="100" fill="#000000aa"/>
+  <path d="M 50, 40 L 150, 40 M 50, 100 L 150, 100 M 50, 160 L 150, 160" style="stroke:hsl(0,0%,95%);stroke-width:24;stroke-linecap:round;"/>
+
+</svg>
+
